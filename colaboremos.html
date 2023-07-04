@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url("img/businessman-collaborate-collaboration-872957-min-768x924.jpg"); /* Ruta a la imagen de fondo */
+      background-size: cover; /* Ajusta el tamaño de la imagen al contenedor */
+      background-position: center; /* Centra la imagen en el contenedor */
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Ajusta la altura de acuerdo a tus necesidades */
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente del formulario */
+      padding: 20px;
+      border-radius: 10px;
+      transform: scale(1.5); /* Incremento del 50% del tamaño */
+    }
+
+    form label,
+    form input,
+    form textarea {
+      display: block; /* Muestra los elementos uno debajo del otro */
+      margin-bottom: 20px; /* Añade un espacio entre los elementos */
+    }
+
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <form>
+      <!-- Agrega los campos de tu formulario de contacto aquí -->
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for = "tema"> Tema:</label>
+      <input type="tema" id="tema" name="tema" required>
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+</body>
+</html>
